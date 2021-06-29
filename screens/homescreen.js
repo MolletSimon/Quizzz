@@ -14,7 +14,8 @@ const Homescreen = () => {
                 <Text style={styles.go}>C'est parti !</Text>
                 <Text style={styles.chooseText}>Choisissez un thème pour commencer à jouer</Text>
             </View>
-            <Theme></Theme>
+            <Theme index="0"></Theme>
+            <Theme index="1"></Theme>
         </View>
     );
 }
