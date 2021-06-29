@@ -5,11 +5,16 @@ import {
     StyleSheet,
     Text
 } from 'react-native';
+import Theme from '../components/Theme';
 
 const Homescreen = () => {
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>Maxi QUIZ !</Text>
+            <View style={styles.headerTextGroup}>
+                <Text style={styles.go}>C'est parti !</Text>
+                <Text style={styles.chooseText}>Choisissez un thème pour commencer à jouer</Text>
+            </View>
+            <Theme></Theme>
         </View>
     );
 }
@@ -19,12 +24,19 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column"
     },
-    text: {
-        color: "white",
+    go: { 
         fontSize: 42,
-        fontWeight: "bold",
-        textAlign: "center",
-        fontFamily: "Gilroy-ExtraBold"
+        fontFamily: "Gilroy-ExtraBold",
+        color: "white"
+    },
+    chooseText: {
+        fontFamily: "Gilroy-Light",
+        color: "white",
+        marginTop: 10
+    },
+    headerTextGroup: {
+        marginLeft: 30,
+        marginTop: 10
     }
 })
 
