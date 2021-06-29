@@ -5,14 +5,16 @@ import {
     StyleSheet,
     Text
 } from 'react-native';
+import Homescreen from './screens/homescreen';
+import Header from './components/Header';
 
 const app = () => {
     return(
-        <View style={styles.container}>
-            <ImageBackground source={require('./assets/images/background.png')} style={styles.imageBackground}>
-                <Text style={styles.text}>Salut Paupau !</Text>
-            </ImageBackground>
-        </View>
+        <ImageBackground source={require('./assets/images/background.png')} style={styles.imageBackground}>
+            <Header></Header>
+            <Homescreen></Homescreen>
+        </ImageBackground>
+        
     );
 }
 
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
         fontSize: 42,
         fontWeight: "bold",
         textAlign: "center",
+        fontFamily: "Gilroy-ExtraBold"
     }
 })
 

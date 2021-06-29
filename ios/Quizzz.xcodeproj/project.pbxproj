@@ -14,6 +14,8 @@
 		6F4EE49AC3452F18ED13C528 /* libPods-Quizzz-QuizzzTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 420E680C2B9F6D82BAB4D94F /* libPods-Quizzz-QuizzzTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C4AAB90F6185CA14B5E11E27 /* libPods-Quizzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA9D8A6F50FC03CBB77EA31 /* libPods-Quizzz.a */; };
+		F4E371FF268A03D600758315 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 93B6C29293B34EB1B7A0B067 /* Gilroy-ExtraBold.otf */; };
+		F4E37200268A03D600758315 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 214D649490FD49CAA4D1D5FB /* Gilroy-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +39,12 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Quizzz/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Quizzz/main.m; sourceTree = "<group>"; };
 		166666269822995DE776518D /* Pods-Quizzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.debug.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.debug.xcconfig"; sourceTree = "<group>"; };
+		214D649490FD49CAA4D1D5FB /* Gilroy-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-Light.otf"; path = "../assets/fonts/Gilroy-Light.otf"; sourceTree = "<group>"; };
 		420E680C2B9F6D82BAB4D94F /* libPods-Quizzz-QuizzzTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Quizzz-QuizzzTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77214B227DE9B5D92AF64143 /* Pods-Quizzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.release.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.release.xcconfig"; sourceTree = "<group>"; };
 		7D8D0827ADD59583FA1F538C /* Pods-Quizzz-QuizzzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz-QuizzzTests.debug.xcconfig"; path = "Target Support Files/Pods-Quizzz-QuizzzTests/Pods-Quizzz-QuizzzTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Quizzz/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93B6C29293B34EB1B7A0B067 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-ExtraBold.otf"; path = "../assets/fonts/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
 		95CF0FEF534CBAF29FD8E712 /* Pods-Quizzz-QuizzzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz-QuizzzTests.release.xcconfig"; path = "Target Support Files/Pods-Quizzz-QuizzzTests/Pods-Quizzz-QuizzzTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAA9D8A6F50FC03CBB77EA31 /* libPods-Quizzz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Quizzz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -122,6 +126,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				AC5E359CDA49C4A3F2FFB444 /* Pods */,
+				E69707B67E084E649B5B52B1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,8 +150,16 @@
 				7D8D0827ADD59583FA1F538C /* Pods-Quizzz-QuizzzTests.debug.xcconfig */,
 				95CF0FEF534CBAF29FD8E712 /* Pods-Quizzz-QuizzzTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E69707B67E084E649B5B52B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93B6C29293B34EB1B7A0B067 /* Gilroy-ExtraBold.otf */,
+				214D649490FD49CAA4D1D5FB /* Gilroy-Light.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E371FF268A03D600758315 /* Gilroy-ExtraBold.otf in Resources */,
+				F4E37200268A03D600758315 /* Gilroy-Light.otf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
