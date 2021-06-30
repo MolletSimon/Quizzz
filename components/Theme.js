@@ -4,21 +4,28 @@ import {
     View,
     StyleSheet,
     Text,
-    Image
+    Image,
+    TouchableHighlight
 } from 'react-native';
 
 const Theme = ({index}) => {
     return(
         <View style={styles.container}>
             {index % 2 == 0 ?  (
-                <View style={styles.themeEven}>
+                <TouchableHighlight style={styles.themeEven} onPress={() => alert('coucou')}>
+                    <>
                     <Image source={require('../assets/icons/icon.png')}></Image>
-                    <Text style={styles.text}>{index} Sciences</Text>
-                </View>
+                    <View style={styles.textView}>
+                        <Text style={styles.text}>Arts</Text>
+                    </View>
+                    </>
+                </TouchableHighlight>
             ) : (
                 <View style={styles.themeOdd}>
-                    <Image source={require('../assets/icons/icon.png')}></Image>
-                    <Text style={styles.text}>{index} Sciences</Text>
+                    <Image source={require('../assets/icons/geo.png')}></Image>
+                    <View style={styles.textViewOdd}>
+                        <Text style={styles.text}>Géo</Text>
+                    </View>
                 </View>
             ) }
         </View>
@@ -27,20 +34,32 @@ const Theme = ({index}) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 20
+        marginLeft: 40,
+        marginRight: 40
     },
     themeEven: {
         flexDirection: 'column',
-        alignItems: "flex-start"
+        alignItems: "flex-start",
+        marginTop: -50,
     },
     themeOdd: {
         flexDirection: 'column',
-        alignItems: "flex-end"
+        alignItems: "flex-end",
+        marginTop: -90
     },
     text: {
         color: "white",
         fontFamily: "Gilroy-ExtraBold",
-
+        fontSize: 20,
+        marginTop: 5
+    },
+    textView: {
+        width: "60%",
+        alignItems: "center",
+    },
+    textViewOdd: {
+        width: "40%",
+        alignItems: "center",
     }
 })
 export default Theme;
